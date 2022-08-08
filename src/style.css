@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  background-color: rgb(25, 25, 25);
+  color: crimson;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main .timerBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main .timerBox .timer {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px crimson;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  margin: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.main .timerBox .timer:hover {
+  box-shadow: 0 0 35px crimson;
+}
+.main .timerBox .buttonBox {
+  display: flex;
+  flex-direction: row;
+}
+.main .timerBox .buttonBox button {
+  width: 100px;
+  height: 30px;
+  margin: 10px;
+  border-radius: 20px;
+  border-color: crimson;
+  color: crimson;
+  background-color: transparent;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-transform: capitalize;
+}
+.main .timerBox .buttonBox button:hover {
+  background-color: crimson;
+  color: rgb(25, 25, 25);
+  letter-spacing: 2px;
+}
+.main .main_time_list {
+  margin: 10px;
+  padding: 10px;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: block;
+}
+.main .main_time_list {
+  overflow: auto;
+  padding: 5px;
+}
+.main .main_time_list div{
+  cursor: pointer;
+}
+.main .main_time_list div:hover {
+  text-shadow: 0 0 5px crimson;
+}
